@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RS Hortonworks Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCHortonWorksTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- RS Hortonworks Test Provision -->
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.allProvisionHortonworksonRackSpace"/>
+            <methods>
+                <include name="instance_Hortonworks_test1" />
+                <include name="instance_Hortonworks_test7" />
+                <include name="instance_Hortonworks_test2" />
+                <include name="instance_Hortonworks_test3" />
+                <include name="instance_Hortonworks_test4" />
+                <include name="instance_Hortonworks_test8" />
+                <include name="instance_Hortonworks_test5" />
+                <include name="instance_Hortonworks_test6" />
+                <include name="instance_Hortonworks_test9" />
+                <include name="instance_Hortonworks_test10" />
+                <include name="instance_Hortonworks_test11" />
+                <include name="instance_Hortonworks_test16" />
+                <include name="instance_Hortonworks_test12" />
+                <include name="instance_Hortonworks_test13" />
+                <include name="instance_Hortonworks_test17" />
+                <include name="instance_Hortonworks_test14" />
+                <include name="instance_Hortonworks_test15" />
+                <include name="instance_Hortonworks_test18" />
+                <include name="instance_Hortonworks_test19" />
+                <include name="instance_Hortonworks_test25" />
+                <include name="instance_Hortonworks_test20" />
+                <include name="instance_Hortonworks_test21" />
+                <include name="instance_Hortonworks_test26" />
+                <include name="instance_Hortonworks_test22" />
+                <include name="instance_Hortonworks_test23" />
+                <include name="instance_Hortonworks_test27" />
+                <include name="instance_Hortonworks_test24" />
+            </methods>
+        </classes>
+    </test>
+</suite>

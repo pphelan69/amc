@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RS AMC Combination Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- RS AMC Combination Test Provision -->
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.allProvisionAMConRackSpace"/>
+            <methods>
+            <include name="instance_amc_test1" />
+            </methods>
+        </classes>
+    </test>
+</suite>

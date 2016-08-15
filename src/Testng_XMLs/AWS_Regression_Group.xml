@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS Regression Test Group">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <class name="cloudTests.cloudCreationAWSTest"/>
+            <methods>
+                <include name="clouds_creation_test8" />
+            </methods>
+            <class name="cloudTests.allProvisionAMConAWS"/>
+            <methods>
+                <include name="instance_amc_test2" />
+            </methods>
+            <class name="cloudTests.allProvisionMATRIXonAWS"/>
+            <methods>
+                <include name="instance_matrix_test4" />
+                <include name="instance_matrix_test19" />
+                <include name="instance_matrix_test35" />
+                <include name="instance_matrix_test50" />
+            </methods>
+            <class name="cloudTests.allProvisionVECTORHonAWS"/>
+            <methods>
+                <include name="instance_vectorh_test1" />
+                <include name="instance_vectorh_test13" />
+                <include name="instance_vectorh_test26" />
+                <include name="instance_vectorh_test38" />
+            </methods>
+            <class name="cloudTests.allProvisionVectorH_EXPS_5_onAWS"/>
+            <methods>
+                <include name="instance_VectorhEXPS_test1" />
+                <include name="instance_VectorhEXPS_test13" />
+                <include name="instance_VectorhEXPS_test25" />
+                <include name="instance_VectorhEXPS_test37" />
+                <include name="instance_VectorhEXPS_GRP_test1" />
+                <include name="instance_VectorhEXPS_GRP_test13" />
+                <include name="instance_VectorhEXPS_GRP_test25" />
+                <include name="instance_VectorhEXPS_GRP_test37" />
+                <include name="inst_VectorhEXPS_Storage_test2" />
+                <include name="inst_VectorhEXPS_Storage_test14" />
+                <include name="inst_VectorhEXPS_Storage_test26" />
+                <include name="inst_VectorhEXPS_Storage_test38" />
+                <include name="inst_VectorhEXPS_Storage_place_test2" />
+                <include name="inst_VectorhEXPS_Storage_place_test14" />
+                <include name="inst_VectorhEXPS_Storage_place_test26" />
+                <include name="inst_VectorhEXPS_Storage_place_test38" />
+            </methods>
+            <class name="cloudTests.allProvisionHortonworksonAWS"/>
+            <methods>
+                <include name="instance_Hortonworks_test1" />
+                <include name="instance_Hortonworks_test13" />
+                <include name="instance_Hortonworks_test25" />
+                <include name="instance_Hortonworks_test37" />
+                <include name="instance_Hortonworks_test49" />
+                <include name="instance_Hortonworks_test61" />
+                <include name="instance_Hortonworks_test74" />
+                <include name="instance_Hortonworks_test86" />
+                <include name="instance_Hortonworks_test98" />
+                <include name="instance_Hortonworks_test110" />
+                <include name="instance_Hortonworks_test122" />
+                <include name="instance_Hortonworks_test134" />
+            </methods>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- Do not modify this file.  It is digitally signed. -->
+<!--License Signer Version: v10-->
+<License>
+  <Owner>Actian</Owner>
+  <Organization>Actian DataFlow Internal</Organization>
+  <ProductName>Actian DataFlow for KNIME, Capacity Based</ProductName>
+  <SerialNumber>R121-2318107</SerialNumber>
+  <Type>Perpetual</Type>
+  <OriginDate>2014-07-01</OriginDate>
+  <Features>
+    <Feature name="DATAFLOW-KNIME-PPL">
+      <Description>Actian DataFlow for KNIME, Capacity Based</Description>
+      <FeatureCode value="PLWINDOWS">WINDOWS Platform</FeatureCode>
+      <FeatureCode value="CPU:1">Maximum number of Cores</FeatureCode>
+      <FeatureCode value="PRODPROD">Production License</FeatureCode>
+      <FeatureCode value="MAXTHREAD:4096">Max allowed threads</FeatureCode>
+      <FeatureCode value="MT">Thread support</FeatureCode>
+      <FeatureCode value="USERS:1">Maximum number of Users</FeatureCode>
+    </Feature>
+    <Feature>
+      <FeatureCode value="DRKNIMEEXECUTOR">KNIME DR Executor</FeatureCode>
+      <FeatureCode value="DRANALYTICS">RushAnalytics Enabled</FeatureCode>
+    </Feature>
+    <Feature name="ADDON_DRSCRIPTING">
+      <Description>DataRush Scripting</Description>
+      <FeatureCode value="DRSCRIPTS">RushScript Enabled</FeatureCode>
+    </Feature>
+    <Feature name="ADDON_unlimitednodes">
+      <Description>Unlimited Nodes</Description>
+      <FeatureCode value="DRNODES:0">Number of Nodes Enabled</FeatureCode>
+    </Feature>
+    <FeatureCode value="SUBDATE:20161231">Maintenance expiration date</FeatureCode>
+  </Features>
+  <Signature serial="1404240874">
+aV7Mn4wLdm4ByToCbgWKdw/3yLOknaxpTZptJKBrCAyduwv7WNwmqZUwUf5uzxIngUBvOvIn
+7YXz1HW+9bMRTpa0cNE5Bo3smDyCaxNQF2t9a+2NdkNZy4KXP5er2msFcPoavcMXpAfVlE1O
+qX0CUxE072V28lyzlJXvpdg7+yE=</Signature>
+</License>

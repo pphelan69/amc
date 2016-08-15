@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS Subnet Vector in Hadoop Enterprise Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCVectorHTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- AWS Subnet Vector in Hadoop Enterprise Test Provision -->
+            <class name="cloudTests.cloudCreationAWSsubnetTest"/>
+            <methods>
+                <include name="clouds_creation_test5" />
+            </methods>
+            <class name="cloudTests.allProvisionVECTORHonAWS_Subnet"/>
+            <methods>
+                <include name="instance_vectorh_test1" />
+                <include name="instance_vectorh_test7" />
+                <include name="instance_vectorh_test2" />
+                <include name="instance_vectorh_test3" />
+                <include name="instance_vectorh_test8" />
+                <include name="instance_vectorh_test4" />
+                <include name="instance_vectorh_test5" />
+                <include name="instance_vectorh_test6" />
+                <include name="instance_vectorh_test9" />
+                <include name="instance_vectorh_test10" />
+                <include name="instance_vectorh_test11" />
+                <include name="instance_vectorh_test19" />
+                <include name="instance_vectorh_test12" />
+                <include name="instance_vectorh_test13" />
+                <include name="instance_vectorh_test14" />
+                <include name="instance_vectorh_test20" />
+                <include name="instance_vectorh_test15" />
+                <include name="instance_vectorh_test16" />
+                <include name="instance_vectorh_test17" />
+                <include name="instance_vectorh_test18" />
+                <include name="instance_vectorh_test21" />
+                <include name="instance_vectorh_test22" />
+                <include name="instance_vectorh_test23" />
+                <exclude name="instance_vectorh_test31" />
+                <include name="instance_vectorh_test24" />
+                <exclude name="instance_vectorh_test25" />
+                <include name="instance_vectorh_test32" />
+                <include name="instance_vectorh_test26" />
+                <include name="instance_vectorh_test27" />
+                <exclude name="instance_vectorh_test28" />
+                <include name="instance_vectorh_test33" />
+                <include name="instance_vectorh_test29" />
+                <include name="instance_vectorh_test30" />
+                <exclude name="instance_vectorh_test34" />
+                <include name="instance_vectorh_test35" />
+                <exclude name="instance_vectorh_test43" />
+                <include name="instance_vectorh_test36" />
+                <exclude name="instance_vectorh_test37" />
+                <include name="instance_vectorh_test38" />
+                <include name="instance_vectorh_test44" />
+                <include name="instance_vectorh_test39" />
+                <exclude name="instance_vectorh_test40" />
+                <include name="instance_vectorh_test41" />
+                <include name="instance_vectorh_test45" />
+                <include name="instance_vectorh_test42" />
+                <exclude name="instance_vectorh_test46" />
+                <include name="instance_vectorh_test47" />
+                <include name="instance_vectorh_test48" />
+            </methods>
+        </classes>
+    </test>
+</suite>

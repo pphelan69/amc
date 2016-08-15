@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS Subnet Matrix Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCMatrixTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- AWS Subnet Matrix Test Provision -->
+            <class name="cloudTests.cloudCreationAWSsubnetTest"/>
+            <methods>
+                <include name="clouds_creation_test5" />
+            </methods>
+            <class name="cloudTests.allProvisionMATRIXonAWS_Subnet"/>
+            <methods>
+                <include name="instance_matrix_test1" />
+                <include name="instance_matrix_test10" />
+                <include name="instance_matrix_test2" />
+                <include name="instance_matrix_test3" />
+                <include name="instance_matrix_test4" />
+                <include name="instance_matrix_test5" />
+                <include name="instance_matrix_test11" />
+                <include name="instance_matrix_test6" />
+                <include name="instance_matrix_test7" />
+                <include name="instance_matrix_test8" />
+                <include name="instance_matrix_test9" />
+                <include name="instance_matrix_test12" />
+                <include name="instance_matrix_test13" />
+                <include name="instance_matrix_test14" />
+                <include name="instance_matrix_test15" />
+                <include name="instance_matrix_test16" />
+                <include name="instance_matrix_test25" />
+                <include name="instance_matrix_test17" />
+                <include name="instance_matrix_test18" />
+                <include name="instance_matrix_test19" />
+                <include name="instance_matrix_test20" />
+                <include name="instance_matrix_test26" />
+                <include name="instance_matrix_test21" />
+                <include name="instance_matrix_test22" />
+                <include name="instance_matrix_test23" />
+                <include name="instance_matrix_test24" />
+                <include name="instance_matrix_test27" />
+                <include name="instance_matrix_test28" />
+                <include name="instance_matrix_test29" />
+                <include name="instance_matrix_test30" />
+                <exclude name="instance_matrix_test31" />
+                <include name="instance_matrix_test32" />
+                <include name="instance_matrix_test33" />
+                <include name="instance_matrix_test41" />
+                <exclude name="instance_matrix_test34" />
+                <include name="instance_matrix_test35" />
+                <include name="instance_matrix_test36" />
+                <exclude name="instance_matrix_test37" />
+                <include name="instance_matrix_test38" />
+                <include name="instance_matrix_test39" />
+                <exclude name="instance_matrix_test40" />
+                <include name="instance_matrix_test42" />
+                <exclude name="instance_matrix_test43" />
+                <include name="instance_matrix_test44" />
+                <include name="instance_matrix_test45" />
+                <exclude name="instance_matrix_test46" />
+                <include name="instance_matrix_test47" />
+                <include name="instance_matrix_test56" />
+                <include name="instance_matrix_test48" />
+                <exclude name="instance_matrix_test49" />
+                <include name="instance_matrix_test50" />
+                <include name="instance_matrix_test51" />
+                <exclude name="instance_matrix_test52" />
+                <include name="instance_matrix_test53" />
+                <include name="instance_matrix_test54" />
+                <exclude name="instance_matrix_test55" />
+                <include name="instance_matrix_test57" />
+                <exclude name="instance_matrix_test58" />
+                <include name="instance_matrix_test59" />
+                <include name="instance_matrix_test60" />
+            </methods>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RS VectorH Express 5.x.x.x Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCVectorHExpressTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- RS VectorH Express 5.x.x.x Test Provision -->
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.allProvisionVectorH_Exps_5_onRackSpace"/>
+            <methods>
+                <include name="instance_VectorhEXPS_test1"/>
+                <include name="instance_VectorhEXPS_test7"/>
+                <include name="instance_VectorhEXPS_test2"/>
+                <include name="instance_VectorhEXPS_test3"/>
+                <include name="instance_VectorhEXPS_test4"/>
+                <include name="instance_VectorhEXPS_test8"/>
+                <include name="instance_VectorhEXPS_test5"/>
+                <include name="instance_VectorhEXPS_test6"/>
+                <include name="instance_VectorhEXPS_test9"/>
+                <include name="instance_VectorhEXPS_test10"/>
+                <include name="instance_VectorhEXPS_test11"/>
+                <include name="instance_VectorhEXPS_test16"/>
+                <include name="instance_VectorhEXPS_test12"/>
+                <include name="instance_VectorhEXPS_test13"/>
+                <include name="instance_VectorhEXPS_test14"/>
+                <include name="instance_VectorhEXPS_test17"/>
+                <include name="instance_VectorhEXPS_test15"/>
+                <include name="instance_VectorhEXPS_test18"/>
+                <include name="instance_VectorhEXPS_test19"/>
+                <include name="instance_VectorhEXPS_test20"/>
+                <include name="instance_VectorhEXPS_test21"/>
+                <include name="instance_VectorhEXPS_test25"/>
+                <include name="instance_VectorhEXPS_test22"/>
+                <include name="instance_VectorhEXPS_test23"/>
+                <include name="instance_VectorhEXPS_test26"/>
+                <include name="instance_VectorhEXPS_test24"/>
+                <include name="instance_VectorhEXPS_test27"/>
+                <include name="instance_VectorhEXPS_test28"/>
+                <include name="instance_VectorhEXPS_test29"/>
+                <include name="instance_VectorhEXPS_test30"/>
+                <include name="instance_VectorhEXPS_test34"/>
+                <include name="instance_VectorhEXPS_test31"/>
+                <include name="instance_VectorhEXPS_test32"/>
+                <include name="instance_VectorhEXPS_test35"/>
+                <include name="instance_VectorhEXPS_test33"/>
+                <include name="instance_VectorhEXPS_test36"/>
+            </methods>
+        </classes>
+    </test>
+</suite>

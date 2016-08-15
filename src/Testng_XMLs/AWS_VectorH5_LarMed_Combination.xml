@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS VectorH Express 5.x.x.x  Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCVectorHExpressTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- AWS VectorH Express 5.x.x.x Test Provision -->
+            <class name="cloudTests.cloudCreationAWSTest"/>
+            <methods>
+                <include name="clouds_creation_test8" />
+            </methods>
+            <class name="cloudTests.allProvisionVectorH_EXPS_5_onAWS"/>
+            <methods>
+                <include name="instance_VectorhEXPS_test7" />
+                <include name="instance_VectorhEXPS_test8" />
+                <include name="instance_VectorhEXPS_test4" />
+                <include name="instance_VectorhEXPS_test5" />
+                <include name="instance_VectorhEXPS_test6" />
+                <include name="instance_VectorhEXPS_test9" />
+                <include name="instance_VectorhEXPS_test19" />
+                <include name="instance_VectorhEXPS_test20" />
+                <include name="instance_VectorhEXPS_test16" />
+                <include name="instance_VectorhEXPS_test17" />
+                <include name="instance_VectorhEXPS_test18" />
+                <include name="instance_VectorhEXPS_test21" />
+                <include name="instance_VectorhEXPS_test31" />
+                <include name="instance_VectorhEXPS_test32" />
+                <include name="instance_VectorhEXPS_test28" />
+                <include name="instance_VectorhEXPS_test33" />
+                <include name="instance_VectorhEXPS_test29" />
+                <include name="instance_VectorhEXPS_test30" />
+                <include name="instance_VectorhEXPS_test43" />
+                <include name="instance_VectorhEXPS_test44" />
+                <include name="instance_VectorhEXPS_test40" />
+                <include name="instance_VectorhEXPS_test41" />
+                <include name="instance_VectorhEXPS_test45" />
+                <include name="instance_VectorhEXPS_test42" />
+                <include name="instance_VectorhEXPS_GRP_test7" />
+                <include name="instance_VectorhEXPS_GRP_test8" />
+                <include name="instance_VectorhEXPS_GRP_test4" />
+                <include name="instance_VectorhEXPS_GRP_test5" />
+                <include name="instance_VectorhEXPS_GRP_test6" />
+                <include name="instance_VectorhEXPS_GRP_test9" />
+                <include name="instance_VectorhEXPS_GRP_test19" />
+                <include name="instance_VectorhEXPS_GRP_test20" />
+                <include name="instance_VectorhEXPS_GRP_test16" />
+                <include name="instance_VectorhEXPS_GRP_test17" />
+                <include name="instance_VectorhEXPS_GRP_test18" />
+                <include name="instance_VectorhEXPS_GRP_test21" />
+                <include name="instance_VectorhEXPS_GRP_test31" />
+                <include name="instance_VectorhEXPS_GRP_test32" />
+                <include name="instance_VectorhEXPS_GRP_test28" />
+                <include name="instance_VectorhEXPS_GRP_test33" />
+                <include name="instance_VectorhEXPS_GRP_test29" />
+                <include name="instance_VectorhEXPS_GRP_test30" />
+                <include name="instance_VectorhEXPS_GRP_test43" />
+                <include name="instance_VectorhEXPS_GRP_test44" />
+                <include name="instance_VectorhEXPS_GRP_test40" />
+                <include name="instance_VectorhEXPS_GRP_test41" />
+                <include name="instance_VectorhEXPS_GRP_test45" />
+                <include name="instance_VectorhEXPS_GRP_test42" />
+                <exclude name="inst_VectorhEXPS_Storage_test7" />
+                <include name="inst_VectorhEXPS_Storage_test8" />
+                <exclude name="inst_VectorhEXPS_Storage_test4" />
+                <include name="inst_VectorhEXPS_Storage_test5" />
+                <include name="inst_VectorhEXPS_Storage_test6" />
+                <include name="inst_VectorhEXPS_Storage_test9" />
+                <exclude name="inst_VectorhEXPS_Storage_test19" />
+                <include name="inst_VectorhEXPS_Storage_test20" />
+                <exclude name="inst_VectorhEXPS_Storage_test16" />
+                <include name="inst_VectorhEXPS_Storage_test17" />
+                <include name="inst_VectorhEXPS_Storage_test18" />
+                <include name="inst_VectorhEXPS_Storage_test21" />
+                <exclude name="inst_VectorhEXPS_Storage_test31" />
+                <include name="inst_VectorhEXPS_Storage_test32" />
+                <exclude name="inst_VectorhEXPS_Storage_test28" />
+                <include name="inst_VectorhEXPS_Storage_test33" />
+                <include name="inst_VectorhEXPS_Storage_test29" />
+                <include name="inst_VectorhEXPS_Storage_test30" />
+                <exclude name="inst_VectorhEXPS_Storage_test43" />
+                <include name="inst_VectorhEXPS_Storage_test44" />
+                <exclude name="inst_VectorhEXPS_Storage_test40" />
+                <include name="inst_VectorhEXPS_Storage_test41" />
+                <include name="inst_VectorhEXPS_Storage_test45" />
+                <include name="inst_VectorhEXPS_Storage_test42" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test7" />
+                <include name="inst_VectorhEXPS_Storage_place_test8" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test4" />
+                <include name="inst_VectorhEXPS_Storage_place_test5" />
+                <include name="inst_VectorhEXPS_Storage_place_test6" />
+                <include name="inst_VectorhEXPS_Storage_place_test9" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test19" />
+                <include name="inst_VectorhEXPS_Storage_place_test20" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test16" />
+                <include name="inst_VectorhEXPS_Storage_place_test17" />
+                <include name="inst_VectorhEXPS_Storage_place_test18" />
+                <include name="inst_VectorhEXPS_Storage_place_test21" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test31" />
+                <include name="inst_VectorhEXPS_Storage_place_test32" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test28" />
+                <include name="inst_VectorhEXPS_Storage_place_test33" />
+                <include name="inst_VectorhEXPS_Storage_place_test29" />
+                <include name="inst_VectorhEXPS_Storage_place_test30" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test43" />
+                <include name="inst_VectorhEXPS_Storage_place_test44" />
+                <exclude name="inst_VectorhEXPS_Storage_place_test40" />
+                <include name="inst_VectorhEXPS_Storage_place_test41" />
+                <include name="inst_VectorhEXPS_Storage_place_test45" />
+                <include name="inst_VectorhEXPS_Storage_place_test42" />
+            </methods>
+        </classes>
+    </test>
+</suite>

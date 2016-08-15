@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RS Matrix Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCMatrixTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- RS Matrix Test Provision -->
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.allProvisionMATRIXonRackSpace"/>
+            <methods>
+                <include name="instance_matrix_test1" />
+                <include name="instance_matrix_test7" />
+                <include name="instance_matrix_test2" />
+                <include name="instance_matrix_test3" />
+                <include name="instance_matrix_test4" />
+                <include name="instance_matrix_test5" />
+                <include name="instance_matrix_test8" />
+                <include name="instance_matrix_test6" />
+            </methods>
+        </classes>
+    </test>
+</suite>

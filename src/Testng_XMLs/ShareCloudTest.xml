@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Share Cloud with users Test Scripts" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!--Share Cloud with USERs with Different Roles. -->
+           <class name="cloudTests.ShareCloudTest"/>
+            <methods>
+                <include name="share_Cloud_test1" />
+                <include name="share_Cloud_test2" />
+                <include name="share_Cloud_test3" />
+                <include name="share_Cloud_test4" />
+                <include name="share_Cloud_test5" />
+                <include name="share_Cloud_test6" />
+                <include name="share_Cloud_test7" />
+                <include name="share_Cloud_test8" />
+                <include name="share_Cloud_test9" />
+                <include name="share_Cloud_test10" />
+                <include name="share_Cloud_test11" />
+                <include name="share_Cloud_test12" />
+                <include name="share_Cloud_test13" />
+                <include name="share_Cloud_test14" />
+                <include name="share_Cloud_test15" />
+                <include name="share_Cloud_test16" />
+                <include name="share_Cloud_test17" />
+                <include name="share_Cloud_test18" />
+                <include name="share_Cloud_test19" />
+                <include name="share_Cloud_test20" />
+                <include name="share_Cloud_test21" />
+                <include name="share_Cloud_test22" />
+                <include name="share_Cloud_test23" />
+            </methods>
+        </classes>
+    </test>
+</suite>

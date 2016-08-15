@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="All cloudZone RegressionTest"  parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="Cloud Test" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <class name="cloudTests.AllCloudconnectionTest"/>
+            <methods>
+                <include name="aws_clouds_connection_test1" />
+                <exclude name="aws_subnet_clouds_connection_test1" />
+            </methods>
+        </classes>
+    </test>
+</suite>

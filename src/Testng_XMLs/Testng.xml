@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regression Test Scripts"  parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="CreateNewUser.xml"/>
+        <suite-file path="ShareCloudTest.xml"/>
+        <suite-file path="ShareClusterTest.xml"/>
+        <suite-file path="ShareInstnaceTest.xml"/>
+    </suite-files>
+
+    <!--<test name="AMCRegressionTests" preserve-order="true">
+        <classes>
+
+            <class name="cloudTests.getBuildVersion"/>
+            <methods>
+                <include name="test" />
+                <exclude name="get_build_Product_version1" />
+                <exclude name="edit_ActianAccount" />
+            </methods>
+            <class name="cloudTests.allProvisionVectorH_EXPS_5_onAWS"/>
+            <methods>
+            <include name="instance_VectorhEXPS_GRP_test25" />
+            </methods>-->
+    <!--<class name="cloudTests.cloudCreationAWSTest"/>
+    <methods>
+        <include name="clouds_creation_test8" />
+    </methods>
+    <class name="cloudTests.cloudCreationAWSsubnetTest"/>
+    <methods>
+        <include name="clouds_creation_test5" />
+    </methods>
+    <class name="cloudTests.cloudCreationRSTest"/>
+    <methods>
+        <include name="clouds_creation_test9" />
+    </methods>
+    <class name="cloudTests.allProvisionVectorH_EXPS_5_onAWS"/>
+    <methods>
+        <include name="instance_VectorhEXPS_test1" />
+        <include name="instance_VectorhEXPS_test2" />
+        <include name="instance_VectorhEXPS_test3" />
+        <include name="instance_VectorhEXPS_test13" />
+        <include name="instance_VectorhEXPS_test14" />
+        <include name="instance_VectorhEXPS_test15" />
+        &lt;!&ndash;<include name="instance_VectorhEXPS_test25" />
+        <include name="instance_VectorhEXPS_test26" />
+        <include name="instance_VectorhEXPS_test27" />
+        <include name="instance_VectorhEXPS_test37" />
+        <include name="instance_VectorhEXPS_test38" />
+        <include name="instance_VectorhEXPS_test39" />&ndash;&gt;
+        <include name="instance_VectorhEXPS_GRP_test1" />
+        <include name="instance_VectorhEXPS_GRP_test2" />
+        <include name="instance_VectorhEXPS_GRP_test3" />
+        <include name="instance_VectorhEXPS_GRP_test13" />
+        <include name="instance_VectorhEXPS_GRP_test14" />
+        <include name="instance_VectorhEXPS_GRP_test15" />
+       &lt;!&ndash; <include name="instance_VectorhEXPS_GRP_test25" />
+        <include name="instance_VectorhEXPS_GRP_test26" />
+        <include name="instance_VectorhEXPS_GRP_test27" />
+        <include name="instance_VectorhEXPS_GRP_test37" />
+        <include name="instance_VectorhEXPS_GRP_test38" />
+        <include name="instance_VectorhEXPS_GRP_test39" />&ndash;&gt;
+    </methods>
+    <class name="cloudTests.allProvisionVectorH_EXPS_5_onAWS_Subnet"/>
+    <methods>
+        <include name="instance_VectorhEXPS_test1" />
+        <include name="instance_VectorhEXPS_test2" />
+        <include name="instance_VectorhEXPS_test3" />
+        <include name="instance_VectorhEXPS_test13" />
+        <include name="instance_VectorhEXPS_test14" />
+        <include name="instance_VectorhEXPS_test15" />
+        &lt;!&ndash;<include name="instance_VectorhEXPS_test25" />
+        <include name="instance_VectorhEXPS_test26" />
+        <include name="instance_VectorhEXPS_test27" />
+        <include name="instance_VectorhEXPS_test37" />
+        <include name="instance_VectorhEXPS_test38" />
+        <include name="instance_VectorhEXPS_test39" />&ndash;&gt;
+        <include name="instance_VectorhEXPS_GRP_test1" />
+        <include name="instance_VectorhEXPS_GRP_test2" />
+        <include name="instance_VectorhEXPS_GRP_test3" />
+        <include name="instance_VectorhEXPS_GRP_test13" />
+        <include name="instance_VectorhEXPS_GRP_test14" />
+        <include name="instance_VectorhEXPS_GRP_test15" />
+        &lt;!&ndash;<include name="instance_VectorhEXPS_GRP_test25" />
+        <include name="instance_VectorhEXPS_GRP_test26" />
+        <include name="instance_VectorhEXPS_GRP_test27" />
+        <include name="instance_VectorhEXPS_GRP_test37" />
+        <include name="instance_VectorhEXPS_GRP_test38" />
+        <include name="instance_VectorhEXPS_GRP_test39" />&ndash;&gt;
+    </methods>-->
+    <!--    </classes>
+    </test>-->
+</suite>

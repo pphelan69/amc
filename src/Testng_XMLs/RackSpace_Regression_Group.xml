@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RackSpace Regression Test Group">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.allProvisionAMConRackSpace"/>
+            <class name="cloudTests.allProvisionMATRIXonRackSpace"/>
+            <methods>
+                <include name="instance_matrix_test1" />
+            </methods>
+            <class name="cloudTests.allProvisionVECTORHonRackSpace"/>
+            <methods>
+                <include name="instance_vectorh_test1" />
+            </methods>
+            <class name="cloudTests.allProvisionVectorH_Exps_5_onRackSpace"/>
+            <methods>
+                <include name="instance_VectorhEXPS_test1" />
+                <include name="instance_VectorhEXPS_test10" />
+                <include name="instance_VectorhEXPS_test19" />
+                <include name="instance_VectorhEXPS_test28" />
+            </methods>
+            <class name="cloudTests.allProvisionHortonworksonRackSpace"/>
+            <methods>
+                <include name="instance_Hortonworks_test1" />
+                <include name="instance_Hortonworks_test10" />
+                <include name="instance_Hortonworks_test19" />
+            </methods>
+        </classes>
+    </test>
+</suite>

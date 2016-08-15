@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Share Cluster with USER Test Scripts" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!--Share Cluster with USERs with Different Roles. -->
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.shareClusterTest"/>
+            <methods>
+                <include name="share_Cluster_test1" />
+                <include name="share_Cluster_test2" />
+                <include name="share_Cluster_test3" />
+                <include name="share_Cluster_test4" />
+                <include name="share_Cluster_test5" />
+                <include name="share_Cluster_test6" />
+                <include name="share_Cluster_test7" />
+                <include name="share_Cluster_test8" />
+                <include name="share_Cluster_test9" />
+                <include name="share_Cluster_test10" />
+                <include name="share_Cluster_test11" />
+                <include name="share_Cluster_test12" />
+                <include name="share_Cluster_test13" />
+                <include name="share_Cluster_test14" />
+                <include name="share_Cluster_test15" />
+                <include name="share_Cluster_test16" />
+                <include name="share_Cluster_test17" />
+                <include name="share_Cluster_test18" />
+                <include name="share_Cluster_test19" />
+                <include name="share_Cluster_test20" />
+                <include name="share_Cluster_test21" />
+                <include name="share_Cluster_test22" />
+            </methods>
+        </classes>
+    </test>
+</suite>

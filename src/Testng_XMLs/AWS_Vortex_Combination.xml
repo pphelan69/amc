@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS Vortex Test Provision" parallel="methods" thread-count="1">
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <!-- AWS Vortex Test Provision -->
+            <class name="cloudTests.cloudCreationAWSTest"/>
+            <methods>
+                <include name="clouds_creation_test8" />
+            </methods>
+            <class name="cloudTests.allProvisionVORTEXonAWS"/>
+            <methods>
+                <include name="instance_Vortex_test1" />
+                <include name="instance_Vortex_test2" />
+                <include name="instance_Vortex_test3" />
+                <include name="instance_Vortex_test4" />
+                <include name="instance_Vortex_test5" />
+                <include name="instance_Vortex_test6" />
+                <include name="instance_Vortex_test7" />
+                <include name="instance_Vortex_test8" />
+                <include name="instance_Vortex_test9" />
+                <include name="instance_Vortex_test10" />
+                <include name="instance_Vortex_test11" />
+                <include name="instance_Vortex_test12" />
+                <include name="instance_Vortex_test13" />
+                <include name="instance_Vortex_test14" />
+                <include name="instance_Vortex_test15" />
+                <include name="instance_Vortex_test16" />
+                <include name="instance_Vortex_test17" />
+                <include name="instance_Vortex_test18" />
+                <include name="instance_Vortex_test19" />
+                <include name="instance_Vortex_test20" />
+                <include name="instance_Vortex_test21" />
+                <include name="instance_Vortex_test22" />
+                <include name="instance_Vortex_test23" />
+                <include name="instance_Vortex_test24" />
+            </methods>
+        </classes>
+    </test>
+</suite>

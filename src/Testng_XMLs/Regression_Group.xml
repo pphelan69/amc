@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regression Test Group">
+        <suite-files>
+            <suite-file path="AWS_AMC_Combination.xml"/>
+            <suite-file path="AWS_Subnet_AMC_Combination.xml"/>
+            <suite-file path="RS_AMC_Combination.xml"/>
+            <suite-file path="AWS_Matrix_Combination.xml"/>
+            <suite-file path="AWS_Subnet_Matrix_Combination.xml"/>
+            <suite-file path="RS_Matrix_Combination.xml"/>
+            <suite-file path="AWS_VectorH_Combination.xml"/>
+            <suite-file path="AWS_Subnet_VectorH_Combination.xml"/>
+            <suite-file path="RS_VectorH_Combination.xml"/>
+            <suite-file path="AWS_VectorH_EXPS_5_Combination.xml"/>
+            <suite-file path="AWS_Subnet_VectorH_EXPS_5_Combination.xml"/>
+            <suite-file path="RS_VectorH_EXPS_5_Combination.xml"/>
+            <suite-file path="AWS_Hortonworks_Combination.xml"/>
+            <suite-file path="AWS_Subnet_Hortonworks_Combination.xml"/>
+            <suite-file path="RS_Hortonworks_Combination.xml"/>
+        </suite-files>
+</suite>

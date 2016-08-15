@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Smoke Test Scripts"  parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- AWS_Subnet Smoke Test Scripts -->
+            <class name="cloudTests.cloudConnectionAWSsubnetTest"/>
+            <class name="cloudTests.cloudCreationAWSsubnetTest"/>
+            <methods>
+                <include name="clouds_creation_test5" />
+            </methods>
+            <class name="cloudTests.cloudDeletionAWSsubnetTest"/>
+            <class name="cloudTests.cloudEditionAWSsubnetTest"/>
+            <methods>
+                <include name="clouds_Edition_test3" />
+            </methods>
+            <!-- RS Smoke Test Scripts -->
+            <class name="cloudTests.cloudConnectionRSTest"/>
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.cloudDeletionRSTest"/>
+            <class name="cloudTests.cloudEditionRSTest"/>
+            <methods>
+                <include name="clouds_Edition_test3" />
+            </methods>
+            <!-- AWS Smoke Test Scripts -->
+            <class name="cloudTests.cloudConnectionAWSTest"/>
+            <class name="cloudTests.cloudCreationAWSTest"/>
+            <methods>
+                <include name="clouds_creation_test8" />
+            </methods>
+            <class name="cloudTests.cloudDeletionAWSTest"/>
+            <class name="cloudTests.cloudEditionAWSTest"/>
+            <methods>
+                <include name="clouds_Edition_test3" />
+            </methods>
+            <class name="cloudTests.instanceAMCSmokeTest"/>
+            <methods>
+                <include name="instance_amc_test2" />  <!-- Provisioning AMC 2CPU4GB on AWS_Subnet -->
+            </methods>
+            <class name="cloudTests.instanceMatrixSmokeTest"/>
+            <methods>
+                <include name="instance_matrix_test3" /> <!-- Provisioning Matrix XtraSmall on AWS_Subnet -->
+            </methods>
+        </classes>
+    </test>
+</suite>

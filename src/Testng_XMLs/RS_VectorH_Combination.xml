@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="RS Vector in Hadoop Enterprise Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCVectorHTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- RS Vector in Hadoop Enterprise Test Provision -->
+            <class name="cloudTests.cloudCreationRSTest"/>
+            <methods>
+                <include name="clouds_creation_test9" />
+            </methods>
+            <class name="cloudTests.allProvisionVECTORHonRackSpace"/>
+            <methods>
+                <include name="instance_vectorh_test7" />
+                <include name="instance_vectorh_test1" />
+                <include name="instance_vectorh_test2" />
+                <include name="instance_vectorh_test3" />
+                <include name="instance_vectorh_test8" />
+                <include name="instance_vectorh_test4" />
+                <include name="instance_vectorh_test5" />
+                <include name="instance_vectorh_test6" />
+                <include name="instance_vectorh_test9" />
+            </methods>
+        </classes>
+    </test>
+</suite>

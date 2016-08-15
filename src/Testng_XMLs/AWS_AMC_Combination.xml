@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS AMC Combination Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- AWS AMC Combination Test Provision -->
+            <class name="cloudTests.cloudCreationAWSTest"/>
+            <methods>
+                <include name="clouds_creation_test8" />
+            </methods>
+            <class name="cloudTests.allProvisionAMConAWS"/>
+            <methods>
+                <include name="instance_amc_test3" />
+                <include name="instance_amc_test1" />
+                <include name="instance_amc_test2" />
+            </methods>
+        </classes>
+    </test>
+</suite>

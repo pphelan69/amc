@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS Subnet Hortonworks Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCHortonWorksTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- AWS Subnet Hortonworks Test Provision -->
+            <class name="cloudTests.cloudCreationAWSsubnetTest"/>
+            <methods>
+                <include name="clouds_creation_test5" />
+            </methods>
+            <class name="cloudTests.allProvisionHortonworksonAWS_Subnet"/>
+            <methods>
+                <include name="instance_Hortonworks_test1" />
+                <include name="instance_Hortonworks_test7" />
+                <include name="instance_Hortonworks_test2" />
+                <include name="instance_Hortonworks_test3" />
+                <include name="instance_Hortonworks_test8" />
+                <include name="instance_Hortonworks_test4" />
+                <include name="instance_Hortonworks_test5" />
+                <include name="instance_Hortonworks_test6" />
+                <include name="instance_Hortonworks_test9" />
+                <include name="instance_Hortonworks_test10" />
+                <include name="instance_Hortonworks_test11" />
+                <include name="instance_Hortonworks_test19" />
+                <include name="instance_Hortonworks_test12" />
+                <include name="instance_Hortonworks_test13" />
+                <include name="instance_Hortonworks_test14" />
+                <include name="instance_Hortonworks_test20" />
+                <include name="instance_Hortonworks_test15" />
+                <include name="instance_Hortonworks_test16" />
+                <include name="instance_Hortonworks_test17" />
+                <include name="instance_Hortonworks_test18" />
+                <include name="instance_Hortonworks_test21" />
+                <include name="instance_Hortonworks_test22" />
+                <include name="instance_Hortonworks_test23" />
+                <include name="instance_Hortonworks_test31" />
+                <include name="instance_Hortonworks_test24" />
+                <include name="instance_Hortonworks_test25" />
+                <include name="instance_Hortonworks_test32" />
+                <include name="instance_Hortonworks_test26" />
+                <include name="instance_Hortonworks_test27" />
+                <include name="instance_Hortonworks_test28" />
+                <include name="instance_Hortonworks_test33" />
+                <include name="instance_Hortonworks_test29" />
+                <include name="instance_Hortonworks_test30" />
+                <include name="instance_Hortonworks_test34" />
+                <include name="instance_Hortonworks_test35" />
+                <include name="instance_Hortonworks_test43" />
+                <include name="instance_Hortonworks_test36" />
+                <include name="instance_Hortonworks_test37" />
+                <include name="instance_Hortonworks_test38" />
+                <include name="instance_Hortonworks_test44" />
+                <include name="instance_Hortonworks_test39" />
+                <include name="instance_Hortonworks_test40" />
+                <include name="instance_Hortonworks_test41" />
+                <include name="instance_Hortonworks_test45" />
+                <include name="instance_Hortonworks_test42" />
+                <include name="instance_Hortonworks_test46" />
+                <include name="instance_Hortonworks_test47" />
+                <include name="instance_Hortonworks_test55" />
+                <include name="instance_Hortonworks_test48" />
+                <include name="instance_Hortonworks_test49" />
+                <include name="instance_Hortonworks_test50" />
+                <include name="instance_Hortonworks_test56" />
+                <include name="instance_Hortonworks_test51" />
+                <include name="instance_Hortonworks_test52" />
+                <include name="instance_Hortonworks_test57" />
+                <include name="instance_Hortonworks_test53" />
+                <include name="instance_Hortonworks_test54" />
+                <include name="instance_Hortonworks_test58" />
+                <include name="instance_Hortonworks_test59" />
+                <include name="instance_Hortonworks_test67" />
+                <include name="instance_Hortonworks_test60" />
+                <include name="instance_Hortonworks_test61" />
+                <include name="instance_Hortonworks_test62" />
+                <include name="instance_Hortonworks_test63" />
+                <include name="instance_Hortonworks_test68" />
+                <include name="instance_Hortonworks_test64" />
+                <include name="instance_Hortonworks_test65" />
+                <include name="instance_Hortonworks_test66" />
+                <include name="instance_Hortonworks_test69" />
+                <include name="instance_Hortonworks_test70" />
+                <include name="instance_Hortonworks_test71" />
+                <exclude name="instance_Hortonworks_test79" />
+                <include name="instance_Hortonworks_test72" />
+                <exclude name="instance_Hortonworks_test73" />
+                <include name="instance_Hortonworks_test74" />
+                <include name="instance_Hortonworks_test80" />
+                <include name="instance_Hortonworks_test75" />
+                <exclude name="instance_Hortonworks_test76" />
+                <include name="instance_Hortonworks_test77" />
+                <include name="instance_Hortonworks_test81" />
+                <include name="instance_Hortonworks_test78" />
+                <exclude name="instance_Hortonworks_test82" />
+                <include name="instance_Hortonworks_test83" />
+                <exclude name="instance_Hortonworks_test91" />
+                <include name="instance_Hortonworks_test84" />
+                <exclude name="instance_Hortonworks_test85" />
+                <include name="instance_Hortonworks_test86" />
+                <include name="instance_Hortonworks_test87" />
+                <include name="instance_Hortonworks_test93" />
+                <exclude name="instance_Hortonworks_test88" />
+                <include name="instance_Hortonworks_test89" />
+                <include name="instance_Hortonworks_test90" />
+                <include name="instance_Hortonworks_test92" />
+                <exclude name="instance_Hortonworks_test94" />
+                <include name="instance_Hortonworks_test95" />
+                <include name="instance_Hortonworks_test96" />
+                <exclude name="instance_Hortonworks_test97" />
+                <include name="instance_Hortonworks_test98" />
+                <include name="instance_Hortonworks_test99" />
+                <include name="instance_Hortonworks_test104" />
+                <exclude name="instance_Hortonworks_test100" />
+                <include name="instance_Hortonworks_test101" />
+                <include name="instance_Hortonworks_test102" />
+                <include name="instance_Hortonworks_test105" />
+                <exclude name="instance_Hortonworks_test103" />
+                <exclude name="instance_Hortonworks_test106" />
+                <include name="instance_Hortonworks_test107" />
+                <include name="instance_Hortonworks_test108" />
+                <exclude name="instance_Hortonworks_test109" />
+                <include name="instance_Hortonworks_test116" />
+                <include name="instance_Hortonworks_test110" />
+                <include name="instance_Hortonworks_test111" />
+                <exclude name="instance_Hortonworks_test112" />
+                <include name="instance_Hortonworks_test113" />
+                <include name="instance_Hortonworks_test117" />
+                <include name="instance_Hortonworks_test114" />
+                <exclude name="instance_Hortonworks_test115" />
+                <exclude name="instance_Hortonworks_test118" />
+                <include name="instance_Hortonworks_test119" />
+                <include name="instance_Hortonworks_test120" />
+                <include name="instance_Hortonworks_test128" />
+                <exclude name="instance_Hortonworks_test121" />
+                <include name="instance_Hortonworks_test122" />
+                <include name="instance_Hortonworks_test123" />
+                <exclude name="instance_Hortonworks_test124" />
+                <include name="instance_Hortonworks_test129" />
+                <include name="instance_Hortonworks_test125" />
+                <include name="instance_Hortonworks_test126" />
+                <exclude name="instance_Hortonworks_test127" />
+                <exclude name="instance_Hortonworks_test130" />
+                <include name="instance_Hortonworks_test131" />
+                <include name="instance_Hortonworks_test132" />
+                <exclude name="instance_Hortonworks_test133" />
+                <include name="instance_Hortonworks_test140" />
+                <include name="instance_Hortonworks_test134" />
+                <include name="instance_Hortonworks_test135" />
+                <exclude name="instance_Hortonworks_test136" />
+                <include name="instance_Hortonworks_test141" />
+                <include name="instance_Hortonworks_test137" />
+                <include name="instance_Hortonworks_test138" />
+                <exclude name="instance_Hortonworks_test139" />
+                <exclude name="instance_Hortonworks_test142" />
+                <include name="instance_Hortonworks_test143" />
+                <include name="instance_Hortonworks_test144" />
+            </methods>
+        </classes>
+    </test>
+</suite>

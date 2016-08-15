@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AWS Subnet AMC Test Provision" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <test name="AMCTests" preserve-order="true">
+        <classes>
+            <class name="cloudTests.getBuildVersion"/>
+            <!-- AWS Subnet AMC Test Provision -->
+            <class name="cloudTests.cloudCreationAWSsubnetTest"/>
+            <methods>
+                <include name="clouds_creation_test5" />
+            </methods>
+            <class name="cloudTests.allProvisionAMConAWS_Subnet"/>
+            <methods>
+                <include name="instance_amc_test3" />
+                <include name="instance_amc_test1" />
+                <include name="instance_amc_test2" />
+            </methods>
+        </classes>
+    </test>
+</suite>

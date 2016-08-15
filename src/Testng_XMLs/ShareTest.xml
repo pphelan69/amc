@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ShareFunctionality Regression Test Scripts"  parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="cloudTests.RetryListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="CreateNewUser.xml"/>
+        <suite-file path="ShareCloudTest.xml"/>
+        <suite-file path="ShareClusterTest.xml"/>
+        <suite-file path="ShareInstnaceTest.xml"/>
+        <suite-file path="AllcloudZoneRegressionTest.xml"/>
+    </suite-files>
+</suite>
