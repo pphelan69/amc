@@ -39,6 +39,24 @@ public class AllCloudconnectionTest
         if (!"".equals(verificationErrorString)) Assert.fail(verificationErrorString);
     }
 
+
+    @DataProvider(name="Cloud zone name")
+    public Object[][] getDataFromDataprovider()
+    { return new Object[][] {
+            {"Asia Pacific (Singapore) Zone A" }, {"Asia Pacific (Singapore) Zone B" },
+            {"Asia Pacific (Sydney) Zone A" }, {"Asia Pacific (Sydney) Zone B" },
+            {"Asia Pacific (Sydney) Zone C" }, {"Asia Pacific (Tokyo) Zone A" },
+            {"Asia Pacific (Tokyo) Zone C" },  {"EU (Frankfurt) Zone A" },
+            {"EU (Frankfurt) Zone B" },{"EU (Ireland) Zone A" },
+            {"EU (Ireland) Zone B" },  {"EU (Ireland) Zone C" },
+            {"US East (N. Virginia) Zone A" },{"US East (N. Virginia) Zone C" },
+            {"US East (N. Virginia) Zone D" },{"US East (N. Virginia) Zone E" },
+            {"US West (N. California) Zone A" },{"US West (N. California) Zone C" },
+            {"US West (Oregon) Zone A" }, {"US West (Oregon) Zone B" },
+            {"US West (Oregon) Zone C" }  };
+    }
+
+
     @Test(dataProvider="Cloud zone name",description="AWS - Test All Availability Zone of AWS Cloud definition connection")
     public void aws_clouds_connection_test1 (String zone) {
         driver.get(baseUrl);
@@ -61,21 +79,6 @@ public class AllCloudconnectionTest
         softAssert.assertAll();
     }
 
-    @DataProvider(name="Cloud zone name")
-    public Object[][] getDataFromDataprovider()
-    { return new Object[][] {
-            {"Asia Pacific (Singapore) Zone A" }, {"Asia Pacific (Singapore) Zone B" },
-            {"Asia Pacific (Sydney) Zone A" }, {"Asia Pacific (Sydney) Zone B" },
-            {"Asia Pacific (Sydney) Zone C" }, {"Asia Pacific (Tokyo) Zone A" },
-            {"Asia Pacific (Tokyo) Zone C" },  {"EU (Frankfurt) Zone A" },
-            {"EU (Frankfurt) Zone B" },{"EU (Ireland) Zone A" },
-            {"EU (Ireland) Zone B" },  {"EU (Ireland) Zone C" },
-            {"US East (N. Virginia) Zone A" },{"US East (N. Virginia) Zone C" },
-            {"US East (N. Virginia) Zone D" },{"US East (N. Virginia) Zone E" },
-            {"US West (N. California) Zone A" },{"US West (N. California) Zone C" },
-            {"US West (Oregon) Zone A" }, {"US West (Oregon) Zone B" },
-            {"US West (Oregon) Zone C" }  };
-    }
 
     @Test(description="AWS_Subnet - Test All Availability Zone of AWS Cloud definition connection", enabled=false)
     public void aws_subnet_clouds_connection_test1 (String zone) {
@@ -93,8 +96,6 @@ public class AllCloudconnectionTest
         awsCloudPage.textfield_Type("Secret Access Key", Constant.CloudSecretAccessKeyAWS);
         awsCloudPage.radioButton_Select(Constant.SubnetIdZoneAWS);
         awsCloudPage.textfield_Type("Subnet ID", Constant.SubnetIdAWS);
-        //awsCloudPage.textfield_Type("Security Group ID", Constant.SecurityGroupIdAWS);
-       // awsCloudPage.selectAWSRegion(zone);
         Assert.assertTrue((awsCloudPage.clickNewCloudDefButton("Test Cloud") == "PASS"), "We expected a valid Test Cloud operation.");
     }
 }

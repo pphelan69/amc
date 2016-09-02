@@ -14,9 +14,9 @@ public class LoginPage {
     By usernameLocator      = By.id("usernameField-input");
     By passwordLocator      = By.id("passwordField-input");
     By loginButtonLocator   = By.id("loginButton");
-    By amcVersion=By.cssSelector(".productLabelStyle");
-    By dialogMessage = By.cssSelector(".gwt-Label.dialogMessageStyle");
-    By dialogButtons = By.cssSelector(".GEG-4-BBJ.GEG-4-BMJ"); // confirmation button 
+    By amcVersion           = By.cssSelector(".productLabelStyle");
+    By dialogMessage        = By.cssSelector(".gwt-Label.dialogMessageStyle");
+    By dialogButtons        = By.cssSelector(".GEG-4-BBJ.GEG-4-BMJ"); // confirmation button
 
 
     public LoginPage(WebDriver driver) {

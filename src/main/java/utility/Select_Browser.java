@@ -41,9 +41,13 @@ public class Select_Browser {
         return driver;
     }
 
-    public void implicitly_Wait() { driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); }
+    public void implicitly_Wait() {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
 
-    public void browser_Maximize() { driver.manage().window().maximize(); }
+    public void browser_Maximize() {
+        driver.manage().window().maximize();
+    }
 }
 
 

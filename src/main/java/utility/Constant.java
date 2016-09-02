@@ -5,12 +5,9 @@ package utility;
  */
 public class Constant {
 
-    public static final String  Browser="FireFox"; // also can be select as FireFox,IE,Chrome
+    public static final String  Browser="Chrome"; // also can be select as FireFox,IE,Chrome
     public static final String  http_protocol = "https";
-    // QA server IP
-    //public static final String  hostNameOrIP = "146.20.50.31";   // "10.4.24.42";  146.20.50.31
-    // Build system IP
-    public static final String  hostNameOrIP = "10.4.24.244";
+    public static final String  hostNameOrIP = "104.198.111.151";
 
 
     public static final String hostPort = "8443";

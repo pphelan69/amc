@@ -8,9 +8,9 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by pphelan on 9/7/15.
  */
-public class CloudNewPage extends AMCPage{
+public class CloudNewPage extends AMCPage {
 
-    By cloudServiceDropDown   = By.cssSelector (".GEG-4-BBS");
+    By cloudServiceDropDown = By.cssSelector(".GEG-4-BBS");
 
     public CloudNewPage(WebDriver driver) {
         super(driver);
@@ -22,22 +22,19 @@ public class CloudNewPage extends AMCPage{
 
     public NewCloudDefinitionPage selectCloudProvider(String cloudProvider) {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        int count = 0;
-        while (count < 4) {
-            try {
-                driver.findElement(cloudServiceDropDown).click();
-                List<WebElement> cloudProviders = driver.findElements(itemsInDropdown);
-                for (WebElement cloud : cloudProviders) {
-                    if (cloud.getText().contains(cloudProvider)) {
-                        cloud.click();
-                        break;
-                    }  }
-            }catch (NoSuchElementException | StaleElementReferenceException e) {
-                System.out.println("Trying to recover from a stale element :" +e);
-                count = count + 1;
-                screenShot(driver);
-                continue;
-            }count = count + 4;
-        }return new NewCloudDefinitionPage(driver);
+
+        try {
+            driver.findElement(cloudServiceDropDown).click();
+            List<WebElement> cloudProviders = driver.findElements(itemsInDropdown);
+            for (WebElement cloud : cloudProviders) {
+                if (cloud.getText().contains(cloudProvider)) {
+                    cloud.click();
+                    break;
+                }
+            }
+        } catch (NoSuchElementException | StaleElementReferenceException e) {
+            System.out.println("Trying to recover from a stale element :" + e);
+        }
+        return new NewCloudDefinitionPage(driver);
     }
 }
